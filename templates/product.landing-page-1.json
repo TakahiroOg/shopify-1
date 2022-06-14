@@ -40,5 +40,5 @@
       }
     }
   },
-  "order": ["main"]
+  "order": ["banner", "main"]
 }
