@@ -134,7 +134,7 @@
   max-width: 110px;
   color: #fff;
 }
-.saving-bundles .saving-bundle:nth-child(2) {
+.saving-bundle:nth-child(2) {
   margin: 0px 10px;
 }
 .b-get-btn {
@@ -241,6 +241,13 @@
     padding: 5px 6px;
     bottom: -12px;
     max-width: 76px;
+  }
+  .saving-bundle {
+    padding: 10px 0px 15px;
+    border-radius: 8px;
+  }
+  .saving-bundle:nth-child(2) {
+    margin: 0px 6px;
   }
   .b-get-btn button {
     font-size: 15px;

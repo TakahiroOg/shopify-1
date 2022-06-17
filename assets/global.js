@@ -1117,4 +1117,13 @@ $(document).ready(function () {
   $(".slider").slick({
     arrows: false,
   });
+  $(".thumbs").slick({
+    slidesToShow: 7,
+    slidesToScroll: 3,
+    asNavFor: ".slider",
+    arrows: false,
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+  });
 });

@@ -2,11 +2,10 @@
   "sections": {
     "banner": {
       "type": "product-banner",
-      "settings": {
-      }
+      "settings": {}
     },
     "16554484668fdf9ca2": {
-      "type": "image-with-text",
+      "type": "image-with-text-2",
       "blocks": {
         "1655448466fa61cbe5-0": {
           "type": "heading",
@@ -18,20 +17,17 @@
         "1655448466fa61cbe5-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Let’s face it – these days, more and more people are struggling to get the consistent, refreshing sleep they need to maintain their health and wellbeing. Here are some scary numbers from 2021 to keep you up even longer tonight:<\/p>",
+            "text": "<p>Let’s face it – these days, more and more people are struggling to get the consistent, refreshing sleep they need to maintain their health and wellbeing. Here are some scary numbers from 2021 to keep you up even longer tonight:</p>",
             "text_style": "body"
           }
         }
       },
-      "block_order": [
-        "1655448466fa61cbe5-0",
-        "1655448466fa61cbe5-1"
-      ],
+      "block_order": ["1655448466fa61cbe5-0", "1655448466fa61cbe5-1"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/image6.webp",
+        "image": "shopify://shop_images/image6.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -42,8 +38,5 @@
       }
     }
   },
-  "order": [
-    "banner",
-    "16554484668fdf9ca2"
-  ]
+  "order": ["banner", "16554484668fdf9ca2"]
 }
