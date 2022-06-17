@@ -173,7 +173,18 @@
   line-height: 1;
   font-weight: 600;
 }
+.show-only-on-mobile {
+  display: none;
+}
+
+/* -----------------Mobile--------------------------- */
 @media screen and (max-width: 767px) {
+  .show-only-on-mobile {
+    display: block;
+  }
+  .banner-desc {
+    max-width: 100%;
+  }
   .banner-section-container {
     padding: 17px 15px 20px;
   }

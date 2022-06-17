@@ -1,7 +1,9 @@
 {{ 'section-product-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="product-banner-section">
-  <div class="banner-section-container">
+<div class="product-banner-section" style="
+    position: relative;
+">
+  <div class="banner-section-container" style="width: 100%;">
     <div class="a-flex-row banner-section-inner">
       <div class="banner-desc">
         <h1>Start Sleeping Like A Baby With This Audio-Aid</h1>
@@ -9,21 +11,7 @@
           <span>This product will change your life</span>
         </div>
         <div class="show-only-on-mobile">
-          <div class="product-single">
-            <div class="box">
-              <div class="wrapper">
-                <div class="grid product-wrapper">
-                  <div class="product-photos grid__item">
-                    <div class="product-single__photos slick-format slick-format-sm slick-initialized slick-slider">
-                      <button class="slick-prev slick-arrow">
-                      
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {%render 'product-slider' %}
         </div>
         <div>
           <ul class="banner-list">

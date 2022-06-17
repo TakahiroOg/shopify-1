@@ -1114,5 +1114,7 @@ class VariantRadios extends VariantSelects {
 customElements.define("variant-radios", VariantRadios);
 
 $(document).ready(function () {
-  $(".slider").slick({});
+  $(".slider").slick({
+    arrows: false,
+  });
 });
