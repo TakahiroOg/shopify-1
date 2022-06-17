@@ -1113,25 +1113,6 @@ class VariantRadios extends VariantSelects {
 
 customElements.define("variant-radios", VariantRadios);
 
-$(document).on("ready", function () {
-  $(".slider")
-    .on("init", function (event, slick) {
-      $(this).append(
-        '<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>'
-      );
-      $(".now-count").text(slick.currentSlide + 1); // 現在のスライド番号(+1が無いと0からスタートしてしまう)
-      $(".all-count").text(slick.slideCount); // スライドの総数
-    })
-    .slick({
-      autoplay: true, //自動再生
-      autoplaySpeed: 1000, //自動再生のスピード
-      speed: 1000, //スライドするスピード
-      dots: true, //スライドしたのドット
-      arrows: true, //左右の矢印
-      infinite: true, //スライドのループ
-      pauseOnHover: false, //ホバーしたときにスライドを一時停止しない
-    })
-    .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-      $(".now-count").text(nextSlide + 1); // 現在のスライド番号の次のスライドになったら番号を+1
-    });
+$(document).ready(function () {
+  $(".slider").slick({});
 });
