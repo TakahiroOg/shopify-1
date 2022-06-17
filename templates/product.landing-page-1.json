@@ -47,8 +47,15 @@
         "1655459708c8481c97-0": {
           "type": "heading",
           "settings": {
-            "heading": "Start Sleeping Soundly With Your Advanced Audio Aid All Night Long",
+            "heading": "Start Sleeping Soundly",
             "heading_size": "h1"
+          }
+        },
+        "1c19955d-1ac2-4148-a358-f369827be4e5": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>With Your Advanced Audio Aid All Night Long<\/strong><\/p>",
+            "text_style": "subtitle"
           }
         },
         "1655459708c8481c97-1": {
@@ -61,6 +68,7 @@
       },
       "block_order": [
         "1655459708c8481c97-0",
+        "1c19955d-1ac2-4148-a358-f369827be4e5",
         "1655459708c8481c97-1"
       ],
       "settings": {
