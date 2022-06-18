@@ -134,7 +134,7 @@
   max-width: 110px;
   color: #fff;
 }
-.saving-bundle:nth-child(2) {
+.saving-bundle2 {
   margin: 0px 10px;
 }
 .b-get-btn {
@@ -176,7 +176,13 @@
 .show-only-on-mobile {
   display: none;
 }
-
+/* .product-form__input input[type="radio"] {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+} */
 /* -----------------Mobile--------------------------- */
 @media screen and (max-width: 767px) {
   .show-only-on-mobile {

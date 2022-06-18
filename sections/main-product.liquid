@@ -382,6 +382,9 @@
               {%- endif -%}
             {%- endunless -%}
 
+
+
+
             <noscript class="product-form__noscript-wrapper-{{ section.id }}">
               <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
                 <label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
@@ -403,6 +406,11 @@
                 </div>
               </div>
             </noscript>
+
+
+
+
+
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
@@ -445,6 +453,9 @@
                 {%- endform -%}
               </product-form>
 
+
+              {% comment %} ---------------------------------------------------------------------------------- {% endcomment %}
+
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
               {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
@@ -468,6 +479,12 @@
             </div>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+
+
+            {% comment %} --------------------------------------------------------------- {% endcomment %}
+
+
+
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
