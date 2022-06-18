@@ -3,5 +3,6 @@
     "main": {
       "type": "option-test"
     }
-  }
+  },
+  "order": ["main"]
 }
