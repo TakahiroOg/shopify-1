@@ -72,12 +72,31 @@
   margin: 2px 0 0;
   line-height: 1.2;
   font-weight: 800;
+  color: #000;
 }
 .sale-tag {
   font-size: 13px;
-  color: #f1818d;
   margin: 0;
-  font-weight: 400;
+  line-height: 1.2;
+  background-color: #ffd400;
+  padding: 5px 0px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.b-off {
+  width: 80px;
+  max-width: 80px;
+}
+.bundle-label {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  color: #000;
+}
+.saving-bundles {
+  padding-bottom: 20px;
 }
 .saving-bundle {
   border: 2px solid #d7d7d7;
@@ -183,6 +202,16 @@
   height: 1px;
   width: 1px;
 }
+input[type="radio"]:checked + label {
+  border: 2px solid #ffd400;
+  background-color: #ffd400;
+}
+.price-save-stock {
+  margin: 33px 0px 26px;
+  max-width: 280px;
+  justify-content: space-between;
+}
+
 /* -----------------Mobile--------------------------- */
 @media screen and (max-width: 767px) {
   .show-only-on-mobile {
@@ -217,12 +246,15 @@
   .banner-list:before {
     display: none;
   }
-  .saving-bundles h4 {
+  .saving-bundles {
+    padding-bottom: 6px;
+  }
+  .bundle-label {
     font-size: 13px;
-    margin: 0px 0px 11px;
+    margin-bottom: 11px;
   }
   .price-save-stock {
-    margin: 19px 0px 7px;
+    margin: 19px 0px 10px;
   }
   .saving-bundle div:nth-child(2) {
     font-size: 14px;
@@ -252,7 +284,7 @@
     padding: 10px 0px 15px;
     border-radius: 8px;
   }
-  .saving-bundle:nth-child(2) {
+  .saving-bundle2 {
     margin: 0px 6px;
   }
   .b-get-btn button {

@@ -25,21 +25,21 @@
             <li>Never worry about ...</li>
           </ul>
         </div>
-        <div class="price-save-stock">
-          <div>
-            <div class="sale-tag">SALE</div>
+        <div class="price-save-stock a-flex-row-always-center">
             <div class="b-price">
               <span>$39.99</span>
               <span class="comp-price">$69.99</span>
             </div>
-          </div>
+            <div class="b-off">
+              <div class="sale-tag">SALE</div>
+            </div>
         </div>
 
 
-    <variant-radios class="no-js-hidden saving-bundles" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+    <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                      <fieldset class="js product-form__input">
-                        <legend class="form__label">Bundle & Save</legend>
+                      <fieldset class="js product-form__input saving-bundles">
+                        <legend class="bundle-label">Bundle & Save</legend>
                         <div class="a-flex-row-always-center">
                         {%- for value in option.values -%}
                           <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
