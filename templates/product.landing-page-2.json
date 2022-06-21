@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "banner": {
+      "type": "product-banner-2",
+      "settings": {}
+    },
+    "16554484668fdf9ca2": {
+      "type": "image-with-text-2",
+      "blocks": {
+        "1655448466fa61cbe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sleeplessness Seriously Affects Your Wellbeing.",
+            "heading_size": "h1"
+          }
+        },
+        "1655448466fa61cbe5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Let’s face it – these days, more and more people are struggling to get the consistent, refreshing sleep they need to maintain their health and wellbeing. Here are some scary numbers from 2021 to keep you up even longer tonight:</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["1655448466fa61cbe5-0", "1655448466fa61cbe5-1"],
+      "settings": {
+        "image": "shopify://shop_images/image6.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1655459708a090d0d4": {
+      "type": "image-with-text-2",
+      "blocks": {
+        "1655459708c8481c97-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Start Sleeping Soundly With Your Advanced Audio Aid All Night Long",
+            "heading_size": "h1"
+          }
+        },
+        "1655459708c8481c97-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>MindBand™</strong> is the last pair of headphones <strong>you’ll ever have to buy.</strong> Placed in a silky-smooth band and designed to comfortably fit around your head, these flat headphones empower you to sleep soundly while listening to serene audio that stimulates deep rest.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["1655459708c8481c97-0", "1655459708c8481c97-1"],
+      "settings": {
+        "image": "shopify://shop_images/image7.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["banner", "16554484668fdf9ca2", "1655459708a090d0d4"]
+}

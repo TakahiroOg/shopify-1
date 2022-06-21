@@ -1,0 +1,129 @@
+<section id="LandingPage1-{{ section.id }}" class="" data-section="{{ section.id }}">
+  
+  {{ 'section-product-banner.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+   {%- assign product_form_id = 'product-form-' | append: section.id -%}
+<div class="product-banner-section" style="
+    position: relative;
+">
+  <div class="banner-section-container" style="width: 100%;">
+    <div class="a-flex-row banner-section-inner">
+      <div class="banner-desc">
+        <h1>Start Sleeping Like A Baby With This Audio-Aid</h1>
+        <div class="banner-subtext">
+          <span>This product will change your life</span>
+        </div>
+        <div class="show-only-on-mobile">
+          {%render 'product-slider' %}
+        </div>
+        <div>
+          <ul class="banner-list">
+            <li>Effective</li>
+            <li>Quick and Easy to use</li>
+            <li>3 times cheaper than traditional way</li>
+            <li>Never worry about ...</li>
+          </ul>
+        </div>
+        <div class="price-save-stock a-flex-row-always-center">
+            <div class="b-price">
+              <span>$39.99</span>
+              <span class="comp-price">$69.99</span>
+            </div>
+            <div class="b-off">
+              <div class="sale-tag">SALE</div>
+            </div>
+        </div>
+
+
+    <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                  {%- for option in product.options_with_values -%}
+                      <fieldset class="js product-form__input saving-bundles">
+                        <legend class="bundle-label">Bundle & Save</legend>
+                        <div class="a-flex-row-always-center">
+                        {%- for value in option.values -%}
+                          <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                name="{{ option.name }}"
+                                value="{{ value | escape }}"
+                                form="{{ product_form_id }}"
+                                {% if option.selected_value == value %}checked{% endif %}
+                          >
+                          	{% if forloop.index == 1 %}
+                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"class="saving-bundle saving-bundle1">
+                          	  <div>SAVE<span>30%</span></div>
+                          	  <div>1 SET</div>
+                          	  <div>Single</div>
+                          	  <div>$39.99</div>
+                              </label>
+                          	{% elsif forloop.index == 2 %}
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"class="saving-bundle saving-bundle2">
+                          	  <div>SAVE<span>30%</span></div>
+                          	  <div>2 SETS</div>
+                          	  <div>Couple Bundle</div>
+                          	  <div>$59.99</div>
+                          	  <div>BEST SELLER</div>
+                          	</label>
+                          	{% elsif forloop.index == 3 %}
+                          	<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"class="saving-bundle saving-bundle3">
+                          	  <div>SAVE<span>30%</span></div>
+                          	  <div>3 SETS</div>
+                          	  <div>Family Bundle</div>
+                          	  <div>$75.99</div>
+                          	  <div>BEST DEAL</div>
+                          	</label>
+                          	{% endif %}
+                        
+                        {%- endfor -%}
+                        </div>
+                      </fieldset>
+                  {%- endfor -%}
+                  <script type="application/json">
+                    {{ product.variants | json }}
+                  </script>
+                </variant-radios>
+
+<div {{ block.shopify_attributes }}>
+              <product-form class="product-form">
+            
+
+                {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                  <div class="b-get-btn">
+                    <button
+                      type="submit"
+                      name="add"
+                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                    >
+                        <span>GET IT TODAY</span>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                    </button>
+                  
+                  </div>
+                {%- endform -%}
+              </product-form>
+            </div>
+            <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+ 
+        <div class="b-safe-checkout">
+          <div class="a-flex-row-always-center">
+            <div>
+            <img src="https://cdn.shopify.com/s/files/1/0555/1774/1228/files/lock.png?v=1655214635">
+            </div>
+            <div>GUARANTEED SAFE CHECKOUT</div>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0555/1774/1228/files/payment-logo.png?v=1655214307">
+          </div>
+        </div>
+      </div>
+      <div class="banner-img">
+      
+      </div>
+    </div>
+  </div>
+</div>
+</section>
