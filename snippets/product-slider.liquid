@@ -1,7 +1,7 @@
 <div class="slider">
   {% for image in product.images %}
-      <div>
-        <img class="mySlides" src="{{ image | img_url: 'master' }}">
+      <div class="{% if forloop.index == 1 %}{% endif %}">
+        <img class="slide-img" src="{{ image | img_url: 'master' }}">
       </div>
 	{% endfor %}
 </div>
@@ -11,14 +11,7 @@
        <img src="{{ image | img_url: 'master' }}">
      </div>
 	{% endfor %}
+</div> 
+<div class="placeholder">
+  <img src="{{ product.featured_image| img_url: 'master' }}" alt="">
 </div>
-
-<style>
-  .slick-slide {
-    background-color: #8e8eff;
-  }
-  .slick-track{
-    overflow-x:hidden;
-    width:100%;
-  }
-</style>
