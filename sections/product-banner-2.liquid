@@ -1,5 +1,11 @@
 <section id="LandingPage2-{{ section.id }}" data-section="{{ section.id }}">
    {{ 'section-product-banner-2.css' | asset_url | stylesheet_tag }}
-  <h1>Hello</h1>
-
+   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+   {%- assign product_form_id = 'product-form-' | append: section.id -%}
+  
+  <div class="product-banner-section">
+    <div class="banner-section-container">
+      <h1>{{ product.metafields.custom.bold_claim }}</h1>
+    </div>
+  </div>
 </section>
