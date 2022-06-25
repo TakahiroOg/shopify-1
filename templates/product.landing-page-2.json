@@ -2,8 +2,11 @@
   "sections": {
     "banner": {
       "type": "product-banner-2",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["sections"]
+  "order": [
+    "banner"
+  ]
 }
