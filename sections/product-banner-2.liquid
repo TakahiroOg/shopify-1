@@ -5,7 +5,14 @@
   
   <div class="product-banner-section">
     <div class="banner-section-container">
-      <h1>{{ product.metafields.custom.bold_claim }}</h1>
+      <div class="a-flex-row banner-section-inner">
+        <div class="banner-content">
+          <h1>{{ product.metafields.custom.bold_claim }}</h1>
+            <div class="banner-subtext">
+              <span>{{ product.metafields.custom.subtitle }}</span>
+            </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

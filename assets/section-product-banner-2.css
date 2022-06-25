@@ -1,3 +1,37 @@
 .banner-section-container {
-  padding: 0 15px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 15px;
 }
+.a-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  clear: both;
+}
+.banner-content {
+  width: 50%;
+}
+.product-banner-section h1 {
+  margin: 5px 0;
+}
+.banner-subtext {
+  line-height: 1.2;
+}
+/* -----------------Mobile--------------------------- */
+@media screen and (max-width: 767px) {
+  .banner-section-container {
+    padding: 0 15px;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .product-banner-section h1 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .banner-subtext {
+    font-size: 13px;
+    margin: 5px 0px 13px;
+  }
+} ;
