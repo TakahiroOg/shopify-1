@@ -2921,3 +2921,22 @@ details-disclosure > details {
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
+.text-center {
+  text-align: center;
+}
+.product-headlines h2 {
+  font-size: 36px;
+}
+.product-headlines {
+  max-width: 776px;
+  margin: auto;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 749px) {
+  .product-headlines h2 {
+    font-size: 25px;
+  }
+}
