@@ -19,6 +19,7 @@
 }
 .banner-subtext {
   font-size: 20px;
+  max-width: 579px;
 }
 .banner-img {
   width: 40%;
@@ -70,17 +71,6 @@
 }
 .cta {
   margin-bottom: 20px;
-}
-.b-get-btn button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.2;
-  background-color: #00c065;
-  border: 1px solid #00c065;
-  padding: 12px 30px;
-  border-radius: 5px;
-  text-align: center;
 }
 .lock-icon {
   width: 20px;
@@ -166,7 +156,7 @@
     margin: 5px 0px 13px;
   }
   .banner-list li {
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 23px;
     line-height: 1.5;
     margin-bottom: 7px;

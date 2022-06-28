@@ -7,7 +7,15 @@
     "intro": {
       "type": "product-intro",
       "settings": {}
+    },
+    "features": {
+      "type": "product-features",
+      "settings": {}
+    },
+    "cta": {
+      "type": "product-cta",
+      "settings": {}
     }
   },
-  "order": ["banner", "intro"]
+  "order": ["banner", "intro", "features", "cta"]
 }

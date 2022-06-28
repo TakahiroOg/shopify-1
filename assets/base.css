@@ -2921,22 +2921,50 @@ details-disclosure > details {
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
+/* ---------------------Custom CSS--------------------------- */
+.product-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.product-container strong {
+  color: black;
+}
 .text-center {
   text-align: center;
 }
 .product-headlines h2 {
   font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .product-headlines {
   max-width: 776px;
-  margin: auto;
+  margin: 20px auto;
+}
+.accent {
+  color: #0088e2;
 }
 .flex-row-center {
   display: flex;
   align-items: center;
 }
+.b-get-btn button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  background-color: #00c065;
+  border: 1px solid #00c065;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-align: center;
+}
 @media screen and (max-width: 749px) {
   .product-headlines h2 {
     font-size: 25px;
+    margin-bottom: 8px;
+  }
+  .product-headlines {
+    margin: 0 auto 20px;
   }
 }
