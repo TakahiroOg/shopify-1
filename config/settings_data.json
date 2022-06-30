@@ -179,7 +179,7 @@
     "blocks": {
       "16789939927838974014": {
         "type": "shopify:\/\/apps\/rivyo-product-reviews-qa\/blocks\/app-embed\/f1860e84-309f-40ca-a2df-188435a622f3",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
