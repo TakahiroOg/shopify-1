@@ -1,5 +1,9 @@
 .product-features {
-  padding: 65px 15px 0;
+  padding: 20px 15px;
+}
+.section-bg-features {
+  background: rgba(220, 225, 227, 0.6);
+  margin-top: 20px;
 }
 .subheading {
   font-size: 16px;
