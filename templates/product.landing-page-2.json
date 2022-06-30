@@ -2,20 +2,47 @@
   "sections": {
     "banner": {
       "type": "product-banner-2",
-      "settings": {}
+      "settings": {
+      }
     },
     "intro": {
       "type": "product-intro",
-      "settings": {}
+      "settings": {
+      }
     },
     "features": {
       "type": "product-features",
-      "settings": {}
+      "settings": {
+      }
     },
     "cta": {
       "type": "product-cta",
-      "settings": {}
+      "settings": {
+      }
+    },
+    "165660600279500f3a": {
+      "type": "apps",
+      "blocks": {
+        "1ef61cc5-7446-47dd-929d-69154fd1b603": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "1ef61cc5-7446-47dd-929d-69154fd1b603"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
-  "order": ["banner", "intro", "features", "cta"]
+  "order": [
+    "banner",
+    "intro",
+    "features",
+    "cta",
+    "165660600279500f3a"
+  ]
 }
