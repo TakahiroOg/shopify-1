@@ -1128,3 +1128,13 @@ $(function () {
 $(document).ready(function () {
   $(".placeholder").css("display", "none");
 });
+$(function () {
+  $(".review-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    focusOnSelect: false,
+    arrows: true,
+  });
+});

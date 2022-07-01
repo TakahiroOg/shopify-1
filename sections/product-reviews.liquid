@@ -1,0 +1,79 @@
+<section>
+   {{ 'section-product-reviews.css' | asset_url | stylesheet_tag }}
+   <div class="section-bg-reviews">
+    <div class="product-container product-reviews">
+      <div class="product-headlines text-center">
+        <h2>See What Others Are Saying About LumbarFlex™</h2>
+      </div>
+      <div class="review-slider">
+       <div class="review-slider-slide">
+            <div class="rev-img">
+                <img src="https://cdn.shopify.com/s/files/1/0555/1774/1228/files/1.jpg?v=1656602404" alt="">
+            </div>
+            <div class="rev-content">
+              <div class="rev-desc">
+                <p>I've been hunched at a desk job for 20 years and have constant back pain. This device is amazing to relax into after 9-10 hours sitting</p>
+              </div>
+              <div class="reviewer-name">
+                <div>David X.</div>
+              </div>
+            </div>
+          </div>
+        <div class="review-slider-slide">
+            <div class="rev-img">
+                <img src="https://cdn.shopify.com/s/files/1/0555/1774/1228/files/1.jpg?v=1656602404" alt="">
+            </div>
+            <div class="rev-content">
+              <div class="rev-desc">
+                <p>I've been hunched at a desk job for 20 years and have constant back pain. This device is amazing to relax into after 9-10 hours sitting</p>
+              </div>
+              <div class="reviewer-name">
+                <div>David X.</div>
+              </div>
+            </div>
+          </div>
+               <div class="review-slider-slide">
+            <div class="rev-img">
+                <img src="https://cdn.shopify.com/s/files/1/0555/1774/1228/files/1.jpg?v=1656602404" alt="">
+            </div>
+            <div class="rev-content">
+              <div class="rev-desc">
+                <p>I've been hunched at a desk job for 20 years and have constant back pain. This device is amazing to relax into after 9-10 hours sitting</p>
+              </div>
+              <div class="reviewer-name">
+                <div>David X.</div>
+              </div>
+            </div>
+          </div>
+       <div class="review-slider-slide">
+            <div class="rev-img">
+                <img src="{{ section.settings.image| image_url: width: 535 }}" alt="">
+            </div>
+            <div class="rev-content">
+              <div class="rev-desc">
+                <p>I've been hunched at a desk job for 20 years and have constant back pain. This device is amazing to relax into after 9-10 hours sitting</p>
+              </div>
+              <div class="reviewer-name">
+                <div>David X.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+{% schema %}
+  {
+    "name": "t:sections.product-reviews.name",
+    "class":"section",
+    "settings": [
+      {
+      "type":"imgage_picker",
+      "id": "image",
+      "label": "t:sections.product-reviews.settings.image.label"
+      }
+    ]
+  }
+{% endschema %} 
