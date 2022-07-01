@@ -29,7 +29,7 @@
 }
 .slick-prev:before,
 .slick-next:before {
-  color: "black !important";
+  color: black !important;
 }
 
 @media screen and (max-width: 749px) {
