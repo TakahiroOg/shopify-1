@@ -6,21 +6,20 @@
         <h2>See What Others Are Saying About LumbarFlex™</h2>
       </div>
       <div class="review-slider">
-      {% for block in section.blocks %}
-        
-            <div class="review-slider-slide">
-              <div class="rev-img">
-                  {{ block.settings.image ) }}
+        {% for block in section.blocks %}
+          <div class="review-slider-slide">
+            <div class="rev-img">
+                {{ block.settings.image }}
+            </div>
+            <div class="rev-content">
+              <div class="rev-desc">
+                <p>{{ block.settings.description }}</p>
               </div>
-              <div class="rev-content">
-                <div class="rev-desc">
-                  <p>I've been hunched at a desk job for 20 years and have constant back pain. This device is amazing to relax into after 9-10 hours sitting</p>
-                </div>
-                <div class="reviewer-name">
-                  <div>David X.</div>
-                </div>
+              <div class="reviewer-name">
+                <div>{{ block.settings.name }}</div>
               </div>
             </div>
+          </div>
         {% endfor %}
         </div>
       </div>
