@@ -9,7 +9,7 @@
         {% for block in section.blocks %}
           <div class="review-slider-slide">
             <div class="rev-img">
-                {{ block.settings.image | image_url: width: 450 }}
+                <img src="{{ block.settings.image | image_url: width: 450 }}" alt="">
             </div>
             <div class="rev-content">
               <div class="rev-desc">
