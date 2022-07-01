@@ -65,26 +65,29 @@
 </section>
 
 {% schema %}
-  {
-    "name": "review",
-    "tag":"section",
-    "settings": [
+{
+  "name": "Slideshow",
+  "tag": "section",
+  "class": "slideshow",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
          {
-           "type": "text",
-           "id": "title",
-           "label": "slideshow"
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
          }
-    ],
-    "blocks": [
-      {
-        "name":"Slide",
-        "type":"slide",
-        "settings": [
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        ]
-      }
-    ]
-  }
+       ]
+     }
+   ]
+}
 {% endschema %} 
