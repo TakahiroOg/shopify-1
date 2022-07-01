@@ -22,8 +22,46 @@
     },
     "review": {
       "type": "product-reviews",
+      "blocks": {
+        "832db9fd-cb26-4efe-ab07-9f1912410b82": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "description": "vv",
+            "name": "vv"
+          }
+        },
+        "c22ea622-b759-4613-ba40-548e8d75e955": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.jpg",
+            "description": "rr",
+            "name": "rr"
+          }
+        },
+        "dada06e4-be55-4c78-9fde-076aa64aa732": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4.jpg",
+            "description": "ss",
+            "name": "ss"
+          }
+        },
+        "d2fd1c92-1d6c-4ae8-a339-b36f723062d4": {
+          "type": "card",
+          "settings": {
+            "description": "",
+            "name": ""
+          }
+        }
+      },
+      "block_order": [
+        "832db9fd-cb26-4efe-ab07-9f1912410b82",
+        "c22ea622-b759-4613-ba40-548e8d75e955",
+        "dada06e4-be55-4c78-9fde-076aa64aa732",
+        "d2fd1c92-1d6c-4ae8-a339-b36f723062d4"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/4.jpg"
       }
     }
   },
