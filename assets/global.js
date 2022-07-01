@@ -1136,5 +1136,16 @@ $(function () {
     centerMode: false,
     focusOnSelect: false,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
