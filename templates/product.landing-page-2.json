@@ -2,24 +2,36 @@
   "sections": {
     "banner": {
       "type": "product-banner-2",
-      "settings": {}
+      "settings": {
+      }
     },
     "intro": {
       "type": "product-intro",
-      "settings": {}
+      "settings": {
+      }
     },
     "features": {
       "type": "product-features",
-      "settings": {}
+      "settings": {
+      }
     },
     "cta": {
       "type": "product-cta",
-      "settings": {}
+      "settings": {
+      }
     },
     "review": {
       "type": "product-reviews",
-      "settings": {}
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4.jpg"
+      }
     }
   },
-  "order": ["banner", "intro", "features", "cta", "review"]
+  "order": [
+    "banner",
+    "intro",
+    "features",
+    "cta",
+    "review"
+  ]
 }
