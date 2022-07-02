@@ -19,8 +19,12 @@
   margin: 0 18px 10px;
   border-radius: 6px;
 }
-/* .rev-desc {
-} */
+.review-slider {
+  display: none;
+}
+.review-slider.slick-initialized {
+  display: block;
+}
 .rev-content {
   text-align: center;
   line-height: 1.25;

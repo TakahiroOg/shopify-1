@@ -8,8 +8,10 @@
     display: none;
   }
 }
+
 .product-cta {
   line-height: 1.4;
+  margin: 40px 0;
 }
 .cta-content {
   flex: 0 0 60%;
@@ -22,5 +24,8 @@
 @media screen and (max-width: 749px) {
   .cta-img {
     display: none;
+  }
+  .product-cta {
+    margin: 20px 0;
   }
 }
