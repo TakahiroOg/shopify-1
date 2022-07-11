@@ -40,4 +40,7 @@
   .review-slider {
     margin: 0px 40px;
   }
+  .product-reviews .product-headlines h2 {
+    font-size: 18px;
+  }
 }

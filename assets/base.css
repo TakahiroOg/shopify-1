@@ -401,6 +401,16 @@ h5,
   word-break: break-word;
 }
 
+.footer {
+  color: #fff !important;
+}
+.footer-block__heading {
+  color: #fff !important;
+}
+.footer-block__details-content .list-menu__item {
+  color: #fff !important;
+}
+
 .h0 {
   font-size: calc(var(--font-heading-scale) * 4rem);
 }

@@ -1,6 +1,5 @@
 <section id="guarantee-{{ section.id }}" data-section="{{ section.id }}">
   {{ 'section-product-guarantee.css' | asset_url | stylesheet_tag }}
-
   <div class="section-guarantee-bg">
     <div class="product-container">
       <div class="product-guarantee">
@@ -12,6 +11,7 @@
           <p class="gt-desc">We stand behind the effectiveness of this product that's why we're giving you the chance to try it risk-free for the next 30 days. You're going to love how the treated area feels after each session, or you get your money back. Simply contact us for directions on how to return the device, and you'll get the instructions that you need without any hassle. Other than those aches and pains that you've been dealing with, you have nothing to lose by trying LumberFlex.</p>
           {% render 'cta' %}
         </div>
+        <img src="{{ section.settings.gt_image | image_url: width: 600 }}" alt="" class="gt-background">
       </div>
     </div>
   </div>
@@ -19,14 +19,13 @@
 
 {% schema %}
 {
-  "name": "background image",
-  "tag": "section",
+  "name": "guarantee",
 	"settings": [
     {
       "type": "image_picker",
-      "id": "image",
+      "id": "gt_image",
       "label": "background image"
     }
-  ],
+  ]
 }
 {% endschema %}
