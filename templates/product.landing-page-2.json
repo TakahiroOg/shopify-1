@@ -2,19 +2,23 @@
   "sections": {
     "banner": {
       "type": "product-banner-2",
-      "settings": {}
+      "settings": {
+      }
     },
     "intro": {
       "type": "product-intro",
-      "settings": {}
+      "settings": {
+      }
     },
     "features": {
       "type": "product-features",
-      "settings": {}
+      "settings": {
+      }
     },
     "cta": {
       "type": "product-cta",
-      "settings": {}
+      "settings": {
+      }
     },
     "review": {
       "type": "product-reviews",
@@ -22,7 +26,7 @@
         "832db9fd-cb26-4efe-ab07-9f1912410b82": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/1.jpg",
+            "image": "shopify:\/\/shop_images\/1.jpg",
             "description": "highly recommend this to anyone who suffers with sciatica.",
             "name": "Dustin H."
           }
@@ -30,7 +34,7 @@
         "c22ea622-b759-4613-ba40-548e8d75e955": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/2.jpg",
+            "image": "shopify:\/\/shop_images\/2.jpg",
             "description": "I used to get personal massages in order to relieve pain and discomfort and this product saved me having to pay for repeated sessions.",
             "name": "Kenny E."
           }
@@ -38,7 +42,7 @@
         "dada06e4-be55-4c78-9fde-076aa64aa732": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/4.jpg",
+            "image": "shopify:\/\/shop_images\/4.jpg",
             "description": "I've been hunched at a desk job for 20 years and have constant back pain. This device is amazing to relax into after 9-10 hours sitting",
             "name": "David X."
           }
@@ -46,7 +50,7 @@
         "d2fd1c92-1d6c-4ae8-a339-b36f723062d4": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/41fbApl93Ij_mid.jpg",
+            "image": "shopify:\/\/shop_images\/41fbApl93Ij_mid.jpg",
             "description": "I was skeptical at first but within 3 days the nerve pain from my Sciatica was gone!",
             "name": "Don N."
           }
@@ -58,12 +62,22 @@
         "dada06e4-be55-4c78-9fde-076aa64aa732",
         "d2fd1c92-1d6c-4ae8-a339-b36f723062d4"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "guarantee": {
       "type": "product-guarantee",
-      "settings": {}
+      "settings": {
+        "gt_image": "shopify:\/\/shop_images\/2_dc1ed4e7-6743-4901-b9a2-cfb4052a8e5a.jpg"
+      }
     }
   },
-  "order": ["banner", "intro", "features", "cta", "review", "guarantee"]
+  "order": [
+    "banner",
+    "intro",
+    "features",
+    "cta",
+    "review",
+    "guarantee"
+  ]
 }
